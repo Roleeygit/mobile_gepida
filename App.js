@@ -5,8 +5,8 @@ import Bikes from './bikes.js';
 const App = () => {
   return (
     <View style={styles.container}>
+    <Text style={styles.subHeaderText}>Juhász Roland Szoft II N</Text>
       <Text style={styles.headerText}>Bikes:</Text>
-      <Text style={styles.subHeaderText}></Text>
       <Bikes/>
     </View>
     
@@ -14,26 +14,34 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  container: 
+  {
     flex: 1,
     padding: 16,
   },
-  row: {
+  row: 
+  {
     flexDirection: 'row',
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
     paddingVertical: 8,
   },
-  cell: {
+  cell: 
+  {
     flex: 1,
     textAlign: 'center',
   },
-  headerText: {
+  headerText: 
+  {
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 16,
     textAlign: 'center',
     marginTop: 16,
+  },
+  subHeaderText:
+  {
+    fontSize: 10
   }
 });
 
